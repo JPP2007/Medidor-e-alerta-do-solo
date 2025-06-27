@@ -8,6 +8,8 @@ Este projeto é um protótipo funcional baseado no Arduino Uno R3, desenvolvido 
 
 Além disso, um display LCD I2C exibe em tempo real a umidade do solo e o horário, fornecido por um módulo RTC DS3231.
 
+
+
 🔧 Resumo do Funcionamento
 
 
@@ -24,6 +26,9 @@ LEDs indicam:
 🔴 Vermelho → Solo seco
 
 Buzzer emite alarme sonoro em caso de solo muito seco
+
+
+
 
 🧰 Componentes Utilizados
 
@@ -42,15 +47,23 @@ Buzzer piezoelétrico
 
 Protoboard e jumpers
 
+
+
+
 🔬 Simulação Online
 
 
 Simular no Wokwi (Substitua pelo link real da sua simulação)
 
+
+
+
 🎥 Vídeo Demonstrativo
 
 
 Assista ao vídeo explicativo aqui (Coloque o link do seu vídeo)
+
+
 
 📟 Funcionamento do Sistema
 
@@ -59,6 +72,9 @@ Nível de Umidade	LED Ativado	Alarme Sonoro
 ≥ 60%	Verde	Não
 30% a 59%	Amarelo	Não
 < 30%	Vermelho	Sim
+
+
+
 
 📝 Código-Fonte
 
@@ -213,6 +229,8 @@ void loop() {
 }
 
 
+
+
 📚 Bibliotecas Necessárias
 
 
@@ -222,10 +240,14 @@ void loop() {
 
 - Wire
 
+- 
+
 👨‍💻 Autor
 
 
 Desenvolvido por João Pedro Palmeira
+
+
 
 📜 Licença
 
