@@ -126,6 +126,9 @@ void loop() {
   
 
   // Exibe dados no LCD
+
+
+  
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Solo: ");
@@ -148,6 +151,9 @@ void loop() {
   
 
   // Controle dos LEDs e buzzer
+
+
+  
   digitalWrite(ledVerde, LOW);
   digitalWrite(ledAmarelo, LOW);
   digitalWrite(ledVermelho, LOW);
