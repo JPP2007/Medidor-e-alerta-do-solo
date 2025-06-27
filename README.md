@@ -1,4 +1,4 @@
-🌱 Medidor de Umidade do Solo com Alerta Visual e Sonoro - Arduino Uno
+🌱 Medidor de Umidade do Solo com Alerta Visual e Sonoro 
 
 
 
