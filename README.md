@@ -95,9 +95,17 @@ const int buzzer = 9;
 
 
 void setup() {
+
+
   Serial.begin(9600);
+
+  
   lcd.init();
+
+  
   lcd.backlight();
+
+  
 
   pinMode(sensorSolo, INPUT);
 
@@ -114,7 +122,11 @@ void setup() {
   pinMode(buzzer, OUTPUT);
 
   if (!rtc.begin()) {
+
+  
     lcd.print("RTC nao encontrado!");
+
+    
     while (1);
   }
 }
