@@ -240,7 +240,6 @@ void loop() {
 
 - Wire
 
-- 
 
 👨‍💻 Autor
 
