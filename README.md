@@ -36,7 +36,7 @@ Importante: Utilize resistores de 220Ω para os LEDs.
 
 
 
-⚡ Componentes Utilizados
+🧰 Componentes Utilizados
 
 
 
@@ -48,11 +48,6 @@ Importante: Utilize resistores de 220Ω para os LEDs.
 ✅ Buzzer piezoelétrico
 ✅ Protoboard e jumpers
 
-💡 Guia de Simulação Online
-
-
-
-Você pode simular o funcionamento completo deste projeto em plataformas como Wokwi ou Tinkercad.
 
  Simulação no Wokwi:
 Acesse o link direto do projeto no Wokwi abaixo.
