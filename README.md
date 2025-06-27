@@ -30,11 +30,6 @@ Vermelho → Solo seco
 
 Buzzer emite alarme sonoro em caso de solo muito seco
 
-🖥️ Instruções de Montagem (Figura Ilustrativa)
-Esquema de Ligações:
-Importante: Utilize resistores de 220Ω para os LEDs.
-
-
 
 🧰 Componentes Utilizados
 
@@ -49,28 +44,13 @@ Importante: Utilize resistores de 220Ω para os LEDs.
 ✅ Protoboard e jumpers
 
 
- Simulação no Wokwi:
-Acesse o link direto do projeto no Wokwi abaixo.
+🔬 Acesse a Simulação Online
 
+🔗 Simular no Wokwi ==>
 
+🎥 Vídeo Demonstrativo
 
-Utilize o potenciômetro virtual para simular variações de umidade do solo.
-
-Observe as alterações nos LEDs, buzzer e display.
-
-🔗 Link Direto para Simulação no Wokwi:
-
-
-👉 Acessar Simulação no Wokwi
-
-(Me avise se quiser que eu já gere o projeto no Wokwi com o link pronto para você.)
-
-🎬 Vídeo Demonstrativo
-
-
-Assista ao vídeo de demonstração do funcionamento do projeto:
-
-▶️ Acessar Vídeo no YouTube
+📺 Assista ao vídeo explicativo aqui ==> 
 
 📟 Funcionamento do Sistema
 
@@ -162,11 +142,11 @@ Bibliotecas Necessárias:
 
 
 
-LiquidCrystal_I2C
+- LiquidCrystal_I2C
 
-RTClib
+- RTClib
 
-Wire
+- Wire
 
 
 👨‍💻 Autor
