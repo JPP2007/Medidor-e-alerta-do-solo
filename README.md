@@ -211,14 +211,16 @@ void loop() {
 
   delay(1000);
 }
+
+
 📚 Bibliotecas Necessárias
 
 
-LiquidCrystal_I2C
+- LiquidCrystal_I2C
 
-RTClib
+- RTClib
 
-Wire
+- Wire
 
 👨‍💻 Autor
 
