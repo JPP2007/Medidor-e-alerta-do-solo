@@ -66,13 +66,22 @@ Nível de Umidade	LED Ativado	Alarme Sonoro
 
 
 #include <Wire.h>
+
+
 #include <LiquidCrystal_I2C.h>
+
+
 #include <RTClib.h>
 
 
 
+
+
 LiquidCrystal_I2C lcd(0x27, 16, 2); // Endereço do LCD I2C
+
+
 RTC_DS3231 rtc;
+
 
 // Pinos
 
@@ -80,27 +89,52 @@ RTC_DS3231 rtc;
 
 
 const int sensorSolo = A0;
+
+
 const int ledVerde = 6;
+
+
 const int ledAmarelo = 7;
+
+
 const int ledVermelho = 8;
+
+
 const int buzzer = 9;
 
 
 
 
+
+
 void setup() {
+
+
   Serial.begin(9600);
+
+  
   lcd.init();
+
+  
   lcd.backlight();
 
 
-  
 
   pinMode(sensorSolo, INPUT);
+
+  
   pinMode(ledVerde, OUTPUT);
+
+  
   pinMode(ledAmarelo, OUTPUT);
+
+  
   pinMode(ledVermelho, OUTPUT);
+
+  
   pinMode(buzzer, OUTPUT);
+
+  
 
 
   
@@ -115,13 +149,18 @@ void setup() {
 
 
 void loop() {
+
   int leitura = analogRead(sensorSolo);
+
+  
   int umidade = map(leitura, 1023, 0, 0, 100);
+
+  
   umidade = constrain(umidade, 0, 100);
 
+  
+
   DateTime agora = rtc.now();
-
-
 
   
 
@@ -130,22 +169,48 @@ void loop() {
 
   
   lcd.clear();
+
+  
   lcd.setCursor(0, 0);
+
+  
   lcd.print("Solo: ");
+
+  
   lcd.print(umidade);
+
+  
   lcd.print("%");
+
+  
 
 
   
 
   lcd.setCursor(0, 1);
+
+  
   lcd.print(agora.hour());
+
+  
   lcd.print(":");
+
+  
   if (agora.minute() < 10) lcd.print("0");
+
+  
   lcd.print(agora.minute());
+
+  
   lcd.print(":");
+
+  
   if (agora.second() < 10) lcd.print("0");
+
+  
   lcd.print(agora.second());
+
+  
 
 
   
@@ -155,8 +220,14 @@ void loop() {
 
   
   digitalWrite(ledVerde, LOW);
+
+  
   digitalWrite(ledAmarelo, LOW);
+
+  
   digitalWrite(ledVermelho, LOW);
+
+  
   noTone(buzzer);
 
 
@@ -171,6 +242,9 @@ void loop() {
     digitalWrite(ledVermelho, HIGH);
     tone(buzzer, 1000);
   }
+
+
+  
 
   delay(1000);
 }
