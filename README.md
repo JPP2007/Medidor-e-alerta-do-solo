@@ -122,11 +122,7 @@ void setup() {
   pinMode(buzzer, OUTPUT);
 
   if (!rtc.begin()) {
-
-  
     lcd.print("RTC nao encontrado!");
-
-    
     while (1);
   }
 }
